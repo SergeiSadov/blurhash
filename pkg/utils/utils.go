@@ -6,6 +6,7 @@ import (
 	"os"
 )
 
+// Img should be passed as a param to Decode method
 type Img struct {
 	Width      int
 	Height     int
@@ -14,6 +15,8 @@ type Img struct {
 	Pixels     []uint8
 }
 
+// GetImg method takes component and img path and returns Img struct as a result
+// works with png images only at the moment
 func GetImg(componentX, componentY int, path string) (resImg *Img, err error) {
 	file, err := os.Open(path)
 	if err != nil {

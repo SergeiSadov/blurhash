@@ -7,6 +7,8 @@ import (
 	"github.com/sergeisadov/blurhash/internal/base83"
 )
 
+// Decode method takes blurhash string, with, height and punch as params and returs pixels byte slice
+// blurhash must be valid to pass method's validation
 func Decode(blurHash string, width, height, punch int) (pixels []uint8, err error) {
 	if !isBlurhashValid(blurHash) {
 		return pixels, ErrBlurhashInvalid

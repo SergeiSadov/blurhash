@@ -15,6 +15,8 @@ const (
 	maxComponent = 9
 )
 
+// Encode method takes custom img params and returns blurhash string as result
+// components must be in interval from 1 to 9 to pass method's validation
 func Encode(img *utils.Img) (string, error) {
 	if img.ComponentX < minComponent || img.ComponentX > maxComponent || img.ComponentY < minComponent || img.ComponentY > maxComponent {
 		return "", ErrIncorrectComponents
