@@ -1,11 +1,11 @@
-# blurhash [![Go Report Card](https://goreportcard.com/badge/github.com/sergeisadov/blurhash)](https://goreportcard.com/report/github.com/sergeisadov/blurhash) [![license](https://img.shields.io/github/license/sergeisadov/blurhash.svg)](https://github.com/sergeisadov/blurhash/blob/master/LICENSE) [![Build Status](https://travis-ci.org/sergeisadov/blurhash.svg)](https://travis-ci.org/sergeisadov/blurhash) [![codecov](https://codecov.io/gh/SergeiSadov/blurhash/branch/main/graph/badge.svg)](https://codecov.io/gh/SergeiSadov/blurhash)
+# blurhash [![Go Report Card](https://goreportcard.com/badge/github.com/sergeisadov/blurhash)](https://goreportcard.com/badge/github.com/sergeisadov/blurhash) [![license](https://img.shields.io/github/license/sergeisadov/blurhash.svg)](https://github.com/sergeisadov/blurhash/blob/master/LICENSE) [![Build Status](https://travis-ci.org/sergeisadov/blurhash.svg)](https://travis-ci.org/sergeisadov/blurhash) [![codecov](https://codecov.io/gh/SergeiSadov/blurhash/branch/main/graph/badge.svg)](https://codecov.io/gh/SergeiSadov/blurhash)
 
 # BlurHash encoder and decoder in GO
 
 This is basically a port of the [Wolt TypeScript](https://github.com/woltapp/blurhash/tree/master/TypeScript) version of
 the [Blurhash alorithm](https://github.com/woltapp/blurhash/blob/master/Algorithm.md) implementation
 
-At the moment works with png only
+At the moment works with png, jpg, gif formats
 
 ## Usage as a library
 
@@ -69,7 +69,7 @@ To build decoder use
 
 - [ ] Other image formats
 - [ ] Benchmarks
-- [ ] More unit tests
+- [ ] Performance optimization
 
 ## Licence
 

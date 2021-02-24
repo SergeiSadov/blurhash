@@ -17,7 +17,7 @@ func TestGetImg(t *testing.T) {
 	}{
 		{"0", args{1, 8, "../../resources/black.png"}, false},
 		{"1", args{1, 8, "../../resources/notexist.png"}, true},
-		{"2", args{1, 8, "../../resources/notanimage.png.png"}, true},
+		{"2", args{1, 8, "../../resources/notanimage.png"}, true},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {

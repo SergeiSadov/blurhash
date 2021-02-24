@@ -2,7 +2,9 @@ package utils
 
 import (
 	"image"
-	"image/png"
+	_ "image/gif"
+	_ "image/jpeg"
+	_ "image/png"
 	"os"
 )
 
@@ -25,7 +27,7 @@ func GetImg(componentX, componentY int, path string) (resImg *Img, err error) {
 
 	defer file.Close()
 
-	img, err := png.Decode(file)
+	img, _, err := image.Decode(file)
 	if err != nil {
 		return
 	}
