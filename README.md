@@ -1,4 +1,4 @@
-# blurhash [![Go Report Card](https://goreportcard.com/badge/github.com/sergeisadov/blurhash)](https://goreportcard.com/report/github.com/sergeisadov/blurhash)  [![license](https://img.shields.io/github/license/sergeisadov/blurhash.svg)](https://github.com/sergeisadov/blurhash/blob/master/LICENSE) [![Build Status](https://travis-ci.org/sergeisadov/blurhash.svg)](https://travis-ci.org/sergeisadov/blurhash) [![codecov](https://codecov.io/gh/SergeiSadov/blurhash/branch/main/graph/badge.svg)](https://codecov.io/gh/SergeiSadov/blurhash)
+# blurhash [![Go Report Card](https://goreportcard.com/badge/github.com/sergeisadov/blurhash)](https://goreportcard.com/report/github.com/sergeisadov/blurhash) [![license](https://img.shields.io/github/license/sergeisadov/blurhash.svg)](https://github.com/sergeisadov/blurhash/blob/master/LICENSE) [![Build Status](https://travis-ci.org/sergeisadov/blurhash.svg)](https://travis-ci.org/sergeisadov/blurhash) [![codecov](https://codecov.io/gh/SergeiSadov/blurhash/branch/main/graph/badge.svg)](https://codecov.io/gh/SergeiSadov/blurhash)
 
 # BlurHash encoder and decoder in GO
 
