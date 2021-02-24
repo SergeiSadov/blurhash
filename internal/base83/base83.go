@@ -88,6 +88,7 @@ var digitCharacters = []string{
 	"~",
 }
 
+// Encode83 is used to encode value to safe encoding
 func Encode83(n float64, length int) (result string) {
 	for i := 1; i <= length; i++ {
 		digit := int(math.Mod(math.Floor(n)/math.Pow(83, float64(length-i)), 83))
@@ -106,6 +107,7 @@ func Encode83(n float64, length int) (result string) {
 	return
 }
 
+// Decode83 is used to decode blurhash string from safe encoding
 func Decode83(blurHash string) (res float64) {
 	blurHashRunes := []rune(blurHash)
 	for i := 0; i < len(blurHashRunes); i++ {
