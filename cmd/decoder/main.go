@@ -3,10 +3,14 @@ package main
 import (
 	"flag"
 	"image"
-	"image/png"
+	_ "image/gif"
+	_ "image/jpeg"
+	_ "image/png"
 	"log"
 	"os"
+	"path"
 
+	"github.com/sergeisadov/blurhash/internal/image_encoder"
 	"github.com/sergeisadov/blurhash/pkg/blurhash"
 )
 
@@ -40,7 +44,7 @@ func main() {
 
 	defer out.Close()
 
-	if err := png.Encode(out, nrgba); err != nil {
+	if err := image_encoder.EncodeImg(path.Ext(resultPath), out, nrgba); err != nil {
 		log.Fatalf("encoding err: %v", err)
 	}
 }

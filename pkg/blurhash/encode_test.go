@@ -27,6 +27,11 @@ func TestEncode(t *testing.T) {
 			imgPath: "../../resources/white.png",
 			want:    "LETSUA_3fQ_3~qoffQoffQfQfQfQ",
 		},
+		{
+			name:    "3",
+			imgPath: "../../resources/pic.jpg",
+			want:    "LRHBxaI9-;Mx~pI9nhjY-pNabatR",
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
